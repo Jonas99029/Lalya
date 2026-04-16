@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lalya — Collection Été 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --r: #e8b4c0;
+      --rd: #c8889a;
+      --rl: #fdf3f6;
+      --rm: #f0d0da;
+      --g: #c4a165;
+      --gl: #f7eed8;
+      --gd: #9a7840;
+      --dk: #2a1f24;
+      --md: #7a5560;
+      --lt: #b89aa4;
+      --wh: #fffcfd;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Jost', sans-serif; background: var(--wh); color: var(--dk); line-height: 1.6; }
+
+```
+/* ── STRIP ── */
+.strip {
+  background: var(--g);
+  padding: 10px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--wh);
+  font-weight: 300;
+}
+
+/* ── NAV ── */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3rem;
+  border-bottom: 0.5px solid var(--rm);
+  background: var(--wh);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: var(--dk);
+  text-decoration: none;
+}
+.logo em { font-style: italic; color: var(--g); }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; }
+.nav-links a {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--md);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--g); }
+.wa-btn {
+  background: var(--dk);
+  color: var(--wh);
+  border: none;
+  padding: 9px 22px;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background .2s;
+}
+.wa-btn:hover { background: var(--gd); }
+
+/* ── HERO ── */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 92vh;
+}
+.hero-left {
+  background: var(--dk);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 4rem;
+  gap: 2rem;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--g);
+  font-weight: 400;
+}
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 58px;
+  font-weight: 300;
+  color: var(--wh);
+  line-height: 1.1;
+}
+.hero-title em { font-style: italic; color: var(--r); }
+.hero-sub {
+  font-size: 14px;
+  color: #b0909a;
+  line-height: 1.9;
+  max-width: 320px;
+  font-weight: 300;
+}
+.hero-actions { display: flex; flex-direction: column; gap: 12px; margin-top: 1rem; }
+.btn-gold {
+  background: var(--g);
+  color: var(--wh);
+  border: none;
+  padding: 14px 32px;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background .2s;
+  align-self: flex-start;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-gold:hover { background: var(--gd); }
+.btn-ghost {
+  background: transparent;
+  color: var(--r);
+  border: 0.5px solid var(--r);
+  padding: 14px 32px;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all .2s;
+  align-self: flex-start;
+}
+.btn-ghost:hover { background: var(--r); color: var(--dk); }
+.hero-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero-visual.top { background: var(--rm); }
+.hero-visual.bot { background: var(--gl); }
+.hero-visual-icon { font-size: 80px; }
+.hero-visual-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--md);
+}
+
+/* ── SECTION HEADER ── */
+.sec { padding: 5rem 3rem; }
+.sec-head { text-align: center; margin-bottom: 3.5rem; }
+.sec-head h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 300;
+  color: var(--dk);
+}
+.sec-head h2 em { font-style: italic; color: var(--g); }
+.sec-line { width: 48px; height: 0.5px; background: var(--g); margin: 1rem auto; display: block; }
+.sec-head p { font-size: 13px; color: var(--lt); letter-spacing: 1px; }
+
+/* ── CATEGORIES ── */
+.cats { background: var(--wh); padding: 0 3rem 5rem; }
+.cat-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.cat-card { position: relative; overflow: hidden; cursor: pointer; }
+.cat-thumb {
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .4s;
+}
+.cat-thumb:hover { transform: scale(1.03); }
+.cat-thumb.sandales { background: linear-gradient(160deg, #f5dfc8, #e8c9a8); }
+.cat-thumb.abayas   { background: linear-gradient(160deg, #ecddf5, #d8c4ec); }
+.cat-thumb.ensembles{ background: linear-gradient(160deg, #fde0eb, #f0c8d8); }
+.cat-big-icon { font-size: 72px; }
+.cat-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: var(--dk);
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cat-overlay h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--wh);
+}
+.cat-overlay span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--g);
+  text-transform: uppercase;
+}
+
+/* ── PRODUITS ── */
+.prod-sec { background: var(--rl); }
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pcard { background: var(--wh); cursor: pointer; transition: transform .25s; }
+.pcard:hover { transform: translateY(-6px); }
+.pcard-img {
+  aspect-ratio: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.pcard-img.c1 { background: #f5e4d0; }
+.pcard-img.c2 { background: #ede0f5; }
+.pcard-img.c3 { background: #fde0eb; }
+.pcard-img.c4 { background: #e0eef5; }
+.pcard-icon { font-size: 52px; }
+.badge-new {
+  position: absolute;
+  top: 12px; left: 12px;
+  background: var(--dk);
+  color: var(--wh);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+}
+.pcard-body { padding: 1rem 1.1rem 1.3rem; }
+.pcard-cat {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--g);
+  margin-bottom: 4px;
+}
+.pcard-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--dk);
+  line-height: 1.2;
+}
+.pcard-desc {
+  font-size: 12px;
+  color: var(--lt);
+  margin-top: 5px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.pcard-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 0.5px solid var(--rm);
+}
+.pcard-price { font-size: 16px; font-weight: 500; color: var(--dk); }
+.pcard-cta {
+  background: transparent;
+  border: 0.5px solid var(--rd);
+  color: var(--rd);
+  padding: 6px 14px;
+  font-family: 'Jost', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s;
+}
+.pcard-cta:hover { background: var(--rd); color: var(--wh); }
+
+/* ── PROMESSE ── */
+.promise {
+  background: var(--dk);
+  padding: 5rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+  text-align: center;
+}
+.promise-item { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.promise-icon {
+  width: 56px; height: 56px;
+  border: 0.5px solid var(--g);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+.promise-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--wh);
+}
+.promise-text {
+  font-size: 12px;
+  color: #907080;
+  line-height: 1.8;
+  max-width: 220px;
+  font-weight: 300;
+}
+
+/* ── EDITORIAL ── */
+.editorial {
+  background: var(--rm);
+  padding: 6rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.ed-text { display: flex; flex-direction: column; gap: 1.5rem; }
+.ed-tag {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gd);
+}
+.ed-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--dk);
+}
+.ed-title em { font-style: italic; color: var(--rd); }
+.ed-body {
+  font-size: 14px;
+  color: var(--md);
+  line-height: 1.9;
+  font-weight: 300;
+}
+.ed-visual {
+  background: var(--dk);
+  aspect-ratio: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.ed-visual-icon { font-size: 90px; }
+.ed-visual-txt {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--r);
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+/* ── RÉSEAUX ── */
+.socials-sec { background: var(--wh); padding: 4rem 3rem; }
+.social-strip {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+.soc-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border: 0.5px solid var(--rm);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--md);
+  cursor: pointer;
+  transition: all .2s;
+  font-weight: 400;
+}
+.soc-pill:hover { background: var(--dk); color: var(--wh); border-color: var(--dk); }
+.soc-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--g); flex-shrink: 0; }
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--dk);
+  padding: 2.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.foot-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--wh);
+  letter-spacing: 4px;
+}
+.foot-logo em { font-style: italic; color: var(--r); }
+.foot-text { font-size: 11px; color: #806070; letter-spacing: 1px; text-align: center; line-height: 1.8; }
+.foot-right { font-size: 11px; color: #806070; letter-spacing: 1px; text-align: right; }
+
+/* ── MODAL ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 31, 36, 0.75);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal-box {
+  background: var(--wh);
+  padding: 2.5rem;
+  max-width: 420px;
+  width: 90%;
+  border-top: 2px solid var(--g);
+}
+.modal-box h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--dk);
+  margin-bottom: 0.8rem;
+}
+.modal-box p {
+  font-size: 13px;
+  color: var(--md);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.modal-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.m-wa {
+  background: #25d366;
+  color: var(--wh);
+  border: none;
+  padding: 13px 24px;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  flex: 1;
+  transition: background .2s;
+}
+.m-wa:hover { background: #1da855; }
+.m-close {
+  background: transparent;
+  color: var(--md);
+  border: 0.5px solid var(--rm);
+  padding: 13px 24px;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 4rem 2rem; }
+  .hero-right { grid-template-rows: 200px 200px; }
+  .nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  .sec { padding: 3.5rem 1.5rem; }
+  .cats { padding: 0 1.5rem 3.5rem; }
+  .cat-row { grid-template-columns: 1fr; }
+  .prod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .promise { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; }
+  .editorial { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; }
+  .footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
+  .foot-right { text-align: center; }
+}
+@media (max-width: 520px) {
+  .prod-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 40px; }
+  .ed-title { font-size: 32px; }
+}
+```
+
+  </style>
+</head>
+<body>
+
+  <!-- BARRE ANNONCE -->
+
+  <div class="strip">Nouvelle collection été 2025 — Abayas · Sandales · Ensembles</div>
+
+  <!-- NAV -->
+
+  <nav class="nav">
+    <a class="logo" href="#">L A L Y A <em>.</em></a>
+    <ul class="nav-links">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#categories">Abayas</a></li>
+      <li><a href="#categories">Ensembles</a></li>
+      <li><a href="#categories">Sandales</a></li>
+    </ul>
+    <button class="wa-btn" onclick="openModal()">Commander</button>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Collection Été 2025</div>
+      <h1 class="hero-title">La nuit qui<br>t'habille,<br><em>oukhty.</em></h1>
+      <p class="hero-sub">Abayas en soie, ensembles fluides et sandales dorées — la féminité maghrébine dans toute sa splendeur.</p>
+      <div class="hero-actions">
+        <a class="btn-gold" href="#produits">Découvrir la collection</a>
+        <button class="btn-ghost" onclick="openModal()">Commander sur WhatsApp</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-visual top">
+        <span class="hero-visual-icon">🪷</span>
+        <span class="hero-visual-label">Abayas en soie</span>
+      </div>
+      <div class="hero-visual bot">
+        <span class="hero-visual-icon">👡</span>
+        <span class="hero-visual-label">Sandales & Ensembles</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+
+  <section class="sec cats" id="categories">
+    <div class="sec-head">
+      <h2>Nos <em>catégories</em></h2>
+      <span class="sec-line"></span>
+      <p>Tout ce que la femme maghrébine cherche, cet été</p>
+    </div>
+    <div class="cat-row">
+      <div class="cat-card">
+        <div class="cat-thumb sandales"><span class="cat-big-icon">👡</span></div>
+        <div class="cat-overlay"><h3>Sandales</h3><span>Voir →</span></div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-thumb abayas"><span class="cat-big-icon">🪷</span></div>
+        <div class="cat-overlay"><h3>Abayas en soie</h3><span>Voir →</span></div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-thumb ensembles"><span class="cat-big-icon">✨</span></div>
+        <div class="cat-overlay"><h3>Ensembles chemisier</h3><span>Voir →</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUITS -->
+
+  <section class="sec prod-sec" id="produits">
+    <div class="sec-head">
+      <h2>Nouveautés <em>de saison</em></h2>
+      <span class="sec-line"></span>
+      <p>Pièces sélectionnées avec soin pour toi</p>
+    </div>
+    <div class="prod-grid">
+      <div class="pcard">
+        <div class="pcard-img c1">
+          <span class="badge-new">Nouveau</span>
+          <span class="pcard-icon">👡</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Sandales</div>
+          <div class="pcard-name">Sandale Médina</div>
+          <div class="pcard-desc">Cuir souple, brides dorées fines</div>
+          <div class="pcard-foot">
+            <span class="pcard-price">29 €</span>
+            <button class="pcard-cta" onclick="openModal()">Commander</button>
+          </div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img c2">
+          <span class="badge-new">Nouveau</span>
+          <span class="pcard-icon">🪷</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Abayas</div>
+          <div class="pcard-name">Abaya Jasmin</div>
+          <div class="pcard-desc">Soie fluide, coupe droite élégante</div>
+          <div class="pcard-foot">
+            <span class="pcard-price">59 €</span>
+            <button class="pcard-cta" onclick="openModal()">Commander</button>
+          </div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img c3">
+          <span class="badge-new">Nouveau</span>
+          <span class="pcard-icon">✨</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Ensembles</div>
+          <div class="pcard-name">Ensemble Nour</div>
+          <div class="pcard-desc">Chemisier & pantalon coordonnés</div>
+          <div class="pcard-foot">
+            <span class="pcard-price">49 €</span>
+            <button class="pcard-cta" onclick="openModal()">Commander</button>
+          </div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img c4">
+          <span class="badge-new">Nouveau</span>
+          <span class="pcard-icon">🌸</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Abayas</div>
+          <div class="pcard-name">Abaya Lune</div>
+          <div class="pcard-desc">Broderies légères, coloris ivoire</div>
+          <div class="pcard-foot">
+            <span class="pcard-price">65 €</span>
+            <button class="pcard-cta" onclick="openModal()">Commander</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMESSE -->
+
+  <section class="promise">
+    <div class="promise-item">
+      <div class="promise-icon">🏪</div>
+      <div class="promise-title">Disponible en boutique</div>
+      <p class="promise-text">Viens essayer et voir les pièces en vrai — on t'accueille avec le sourire.</p>
+    </div>
+    <div class="promise-item">
+      <div class="promise-icon">💬</div>
+      <div class="promise-title">Commande via WhatsApp</div>
+      <p class="promise-text">Un message suffit — on prend ta commande et on t'aide à choisir ta taille.</p>
+    </div>
+    <div class="promise-item">
+      <div class="promise-icon">🌸</div>
+      <div class="promise-title">Sélection exclusive</div>
+      <p class="promise-text">Des pièces importées et choisies une par une pour la femme maghrébine moderne.</p>
+    </div>
+  </section>
+
+  <!-- EDITORIAL -->
+
+  <section class="editorial">
+    <div class="ed-text">
+      <div class="ed-tag">L'esprit Lalya</div>
+      <h2 class="ed-title">Modestie &<br><em>élégance</em>,<br>sans compromis.</h2>
+      <p class="ed-body">Lalya, c'est la nuit — ce moment où la femme brille, dans le calme et la confiance. Chaque pièce est pensée pour t'habiller avec grâce, que tu sois en famille, en sortie ou simplement toi-même.</p>
+      <button class="btn-gold" onclick="openModal()">Commander maintenant</button>
+    </div>
+    <div class="ed-visual">
+      <span class="ed-visual-icon">🌙</span>
+      <span class="ed-visual-txt">Collection Lalya — Été 2025</span>
+    </div>
+  </section>
+
+  <!-- RÉSEAUX SOCIAUX -->
+
+  <section class="sec socials-sec">
+    <div class="sec-head">
+      <h2>Retrouve <em>Lalya</em> sur</h2>
+      <span class="sec-line"></span>
+    </div>
+    <div class="social-strip">
+      <div class="soc-pill"><span class="soc-dot"></span>WhatsApp</div>
+      <div class="soc-pill"><span class="soc-dot"></span>Snapchat</div>
+      <div class="soc-pill"><span class="soc-dot"></span>TikTok</div>
+      <div class="soc-pill"><span class="soc-dot"></span>En boutique</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="foot-logo">L A L Y A <em>.</em></div>
+    <div class="foot-text">Fait avec amour — commandes via WhatsApp<br>Boutique physique disponible</div>
+    <div class="foot-right">© 2025 Lalya<br>Tous droits réservés</div>
+  </footer>
+
+  <!-- MODAL COMMANDE -->
+
+  <div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+    <div class="modal-box">
+      <h3>Commander chez Lalya</h3>
+      <p>Envoie-nous un message sur WhatsApp avec les articles qui t'intéressent — on te répond vite et on t'aide à finaliser ta commande.</p>
+      <div class="modal-actions">
+        <!-- REMPLACE le # par ton lien WhatsApp : https://wa.me/33XXXXXXXXX -->
+        <button class="m-wa" onclick="window.open('https://wa.me/33XXXXXXXXX','_blank')">WhatsApp →</button>
+        <button class="m-close" onclick="closeModal()">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('modal').classList.add('open');
+    }
+    function closeModal() {
+      document.getElementById('modal').classList.remove('open');
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+
+</body>
+</html>
+
+
